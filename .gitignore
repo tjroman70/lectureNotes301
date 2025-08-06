@@ -1,0 +1,12 @@
+/.bloop
+/.idea
+/.idea_modules
+/.metals
+/build.mill
+/.sireum.ver
+/.mill-version
+.scala-build
+out
+*.cmd.jar
+*.cmd.com
+.iml
