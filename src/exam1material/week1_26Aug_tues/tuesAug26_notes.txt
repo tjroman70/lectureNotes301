@@ -323,7 +323,7 @@ You see two different inhabitants, Ava and Bob.
 Ava says that Bob is a knave.
 Bob says, "Neither Ava nor I are knaves."
 
-    "Ava is a knight and I am a knight"
+
 
 What are Ava and Bob?
 
