@@ -1,5 +1,9 @@
 HW 0 - due today (what to submit?)
 
+    link format
+
+
+
 HW 1 - due Tuesday, September 2
     be sure to explain your reasoning when asked
     on logic puzzles, should be clear why your answer is the only  
@@ -39,7 +43,7 @@ else {
     statements3;
 }
 
---> when is the first (if) condition false?
+
 
 --> is it possible for "statements2" to execute?7
 
