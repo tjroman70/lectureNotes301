@@ -118,7 +118,7 @@ Order of operations
 Top-level operator (what happens LAST?)
 
 
-¬p ∧ q ∨ r
+¬p ∨ q ∧ r
 
 
 top-level? 
@@ -220,18 +220,7 @@ Write a truth table for:
 (p ∧ r) → (r ∨ ¬q)
 
 
------------------------------
-p q r  #  (p ∧ r) → (r ∨ ¬q)
------------------------------
-T T T #      
-T T F #      
-T F T #      
-T F F #     
-F T T #     
-F T F #    
-F F T #     
-F F F #     
------------------------------
+
 
 
 
@@ -259,6 +248,10 @@ NOT: !
 IMPLIES: ->:
 
 alignment matters!
+
+
+(how to get fonts?)
+
 
 --> order of operations in Logika
 

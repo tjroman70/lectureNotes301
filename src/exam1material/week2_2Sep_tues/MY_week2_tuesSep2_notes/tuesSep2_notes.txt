@@ -118,7 +118,7 @@ Order of operations
 Top-level operator (what happens LAST?)
 
 
-¬p ∧ q ∨ r
+¬p ∨ q ∧ r
 
 
 top-level? 
