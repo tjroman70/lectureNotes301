@@ -98,16 +98,16 @@ r is F
 
 Order of operations
     ¬ evaluates right to left
-        ¬¬p is equivalent to....
+        ¬¬p is equivalent to.... ¬(¬p)
 
 
     ∧ and ∨ evaluate left to right
-        p ∧ q ∧ r is equivalent to....
-        p ∨ q ∨ r is equivalent to....
+        p ∧ q ∧ r is equivalent to.... (p ^ q) ^ r
+        p ∨ q ∨ r is equivalent to....  (p ∨ q) ∨ r
 
 
     → evaluates right to left
-        p → q → r is equivalent to....
+        p → q → r is equivalent to.... p → (q → r)
 
 
 
@@ -122,7 +122,7 @@ Top-level operator (what happens LAST?)
 
 
 top-level? 
-
+The and by the r
 
 How is this similar to a circuit? 
 
@@ -133,7 +133,7 @@ How is this similar to a circuit?
 p ∧ q ∨ r ∧ p
 
 rewrite with ():
-
+(p ∧ q) ∨ (r ∧ p)
 
 top-level operator? 
 
@@ -144,10 +144,11 @@ top-level operator?
 p ∧ q ∧ r ∧ s
 
 rewrite with ():
+((p ∧ q) ∧ r) ∧ s
 
 
 top-level operator? AND 
-
+The rightmost one by the s
 
 ////////////////////////////////////////////////////
 
@@ -164,19 +165,19 @@ If we have 2 variables, how many possible truth assignments?
     p, q
 
 
-
+4
 
 
 If we have 3 variables, how many possible truth assignments?
 
     p, q, r
 
-
+8
 
 If we have n variables, how many possible truth assignments?
 
 
-
+2^n
 
 
 
@@ -190,20 +191,20 @@ Contingent, contradictory, tautology
 
 
 
-contingent: 
+contingent: at least one truth assignment is true and one is false
 
-    Example? 
-
-
-
-contradictory:
-
-    Example? 
+    Example? p or q
 
 
-tautology:
 
-    Example? 
+contradictory: Always false; every truth assignment evals to false
+
+    Example? !p ^ p
+
+
+tautology: Always true; every truth assignment evals to true
+
+    Example? !p or p
     
 
 ///////////////////////////////////////////
@@ -223,14 +224,14 @@ Write a truth table for:
 -----------------------------
 p q r  #  (p ∧ r) → (r ∨ ¬q)
 -----------------------------
-T T T #      
-T T F #      
-T F T #      
-T F F #     
-F T T #     
-F T F #    
-F F T #     
-F F F #     
+T T T #      T     T     T  F
+T T F #      F     T     F  F
+T F T #      T     T     T  T
+T F F #      F     T     T  T
+F T T #      F     T     T  F
+F T F #      F     T     F  F  
+F F T #      F     T     T  T   
+F F F #      F     T     T  T  
 -----------------------------
 
 
@@ -314,24 +315,26 @@ Propositional logic.
 
 ////////////////////////////////////////
 
-Which ones are propositions?
+Which ones are propositions? (true or false)
 
-Today is Thursday.
+propositional atom: as simple of a proposition as possible (doesn't contain operators)
 
-
-What time is it?
-
-
-x == 2
+Today is Thursday. Yes
 
 
-Pigs can fly.
+What time is it? No
 
 
-Drive carefully.
+x == 2 Yes
 
 
-y <= 4
+Pigs can fly. Yes
+
+
+Drive carefully. No
+
+
+y <= 4 Yes
 
 
 
@@ -350,21 +353,21 @@ Suppose we have these propositional atoms:
 
 How would we express these as English sentences?
 
-    ¬p:
+    ¬p: Not below freezing
 
 
-    p ∧ q:
+    p ∧ q: below freezing and snowing
 
 
-    p → q :
+    p → q : below freezing then it is snowing
 
 
-    ¬p → ¬q:
+    ¬p → ¬q: not below freeezing, then it not snowing
 
 
-    r ∨ s:
+    r ∨ s: y <= 4 || x == 2
 
-    ¬r:
+    ¬r: y > 4
 
 ////////////////////////
 
