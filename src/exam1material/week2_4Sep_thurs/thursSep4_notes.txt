@@ -1,7 +1,7 @@
 HW 1 repository issues
 
 
-HW 2 due Tuesday, February 4
+HW 2 due Tuesday, September 9
 
 --> will be creating 2 image files
 
@@ -69,7 +69,8 @@ z != 7 && str.contains(sub)
 
 Example:
 
-You can't enroll for the course if you haven't taken the prerequisite.
+You can't enroll for the course if you haven't taken 
+the prerequisite.
 
 
 --> what are the propositional atoms?
