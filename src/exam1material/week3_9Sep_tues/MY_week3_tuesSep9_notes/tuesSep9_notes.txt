@@ -80,14 +80,15 @@ Proving an argument.
 
 *Premises* - pieces of information we are given (assume true)
 
-*Conclusion* - something we are trying to show logically follows
-    from our premises.
+*Conclusion* - something we are trying to show logically 
+    follows from our premises.
 
 
 
 An argument is of the form:
 
-    IF all the premises really are true, THEN the conclusion is true
+    IF all the premises really are true, 
+    THEN the conclusion is true
 
 
 
@@ -102,15 +103,15 @@ Proofs with truth tables.
 
 Suppose we know:
 
-    - I am in the CS department or I am in the ECE department
-    - I am not in the ECE department.
+    - I am in the CS dept or I am in the ECE dept
+    - I am not in the ECE dept
     - I can log in to the CS lab computers if
-        I am in the CS department.
+        I am in the CS dept
 
 I want to prove:
 
     - I can log in to the CS lab computers
-        and I am in the CS department.
+        and I am in the CS dept
 
 --> How would we translate to propositional logic?
 
@@ -170,9 +171,6 @@ We wish to prove:
 
 When is an argument invalid?
 
-    if I can find a truth assigment where all premises are true,
-        but the conclusion is NOT true
-
 
 
 
@@ -187,18 +185,13 @@ Proposed conclusion:
 
 1) Translate to propositional logic
 
-    p: it is sunny
-    q: I wear sunscreen
 
-p → q, q  ⊢  p
+
 
 
 2) How can we show it is invalid?
 
-p = F
-q = T
 
-all premises are true, but conclusion is false
 
 
 ////////////////////////////////
@@ -215,12 +208,14 @@ Showing arguments are invalid in Logika
 
 ////////////////////////////
 
-Does it matter if the conclusion is true when the premises aren't?
+Does it matter if the conclusion is true when 
+    the premises aren't?
+
 
 Does it matter if one premise is true when the other isn't?
 
-Does it matter if the conclusion is false when some (but not all) of the 
-    premises are true?
+Does it matter if the conclusion is false when some 
+    (but not all) of the premises are true?
 
 ////////////////////////////
 
@@ -248,9 +243,11 @@ New idea: demonstrate conclusion follows from premises using
         lets us introduce a claim with that operator
 
     - *elimination* rule:
-        lets us extract pieces from a claim with that operator
+        lets us extract pieces from a claim with
+            that operator
 
---> apply these rules to create new claims that logically follow
+--> apply these rules to create new claims that 
+    logically follow
 
 
 
@@ -417,6 +414,6 @@ p ∧ q ∧ r ⊢ q
 Next time:
 
 - OR rules in natural deduction
-- Using natural deduction to prove two statements are equivalent
+- Natural deduction to prove two statements are equivalent
 - Equivalent if-statements
 - If time, implies rules in natural deduction
