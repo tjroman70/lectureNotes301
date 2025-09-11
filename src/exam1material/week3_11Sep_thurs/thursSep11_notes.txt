@@ -117,6 +117,7 @@ Example:
 (p ∧ q) ⊢ (p ∨ q)
 Proof(
     1 ( p ∧ q   ) by Premise,
+    
 
 )
 
@@ -125,7 +126,7 @@ Or, could have done:
 (p ∧ q) ⊢ (p ∨ q)
 Proof(
     1 ( p ∧ q   ) by Premise,
-    
+
 )
 
 

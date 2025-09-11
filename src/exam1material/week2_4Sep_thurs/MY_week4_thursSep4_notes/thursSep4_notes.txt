@@ -21,7 +21,7 @@ Example: another parse tree
 
 p ∧ q ∧ r → ¬p ∨ q → r
 
-
+top level: implies arrow
 
 Example: another circuit
 
@@ -74,11 +74,14 @@ You can't enroll for the course if you haven't taken the prerequisite.
 
 --> what are the propositional atoms?
 
-
+p: you can enroll for the course if you have taken the prereq
+q:
 
 --> translate to propositional logic:
 
-really saying:
+!p -> !q
+
+really saying: if you haven't taken the prereq, you can't take the other course
 
 
 
@@ -86,7 +89,8 @@ really saying:
 
 What is the *contrapositive* of our statement?
 
-
+p -> q
+If you have enrolled in the course, you had to take the prereq
 
 
 
@@ -104,9 +108,15 @@ if (x <= 2 || y >= 0) {
 
 Propositional atoms?
 
+p: x <= 2
+q: y >= 0
+r: z == 17
+s: answer == 25
 
 Translation? (if ... then ...)
 
+if both conditions are true, then answer = 25
+(p or q) ^ !r
 
 //////////////////////////////////
 
@@ -210,6 +220,7 @@ if ((y >= 4 && num != 14) || x > 0) {
 
 negate it:
 
+if ((y < 4 || num == 14) && x > 0)
 
 ///////////////////////
 
@@ -229,14 +240,15 @@ p → q ≡  ¬p ∨ q                     (can turn implies into an or)
 
 associative laws
 
-    (2 + 3) + 5 = ?
+    (2 + 3) + 5 = 2 + (3 + 5)
 
-    (p ∧ q) ∧ r     vs      ???   
+    (p ∧ q) ∧ r     vs      p ^ (q ^ r)    
 
 
     (p → q) → r     vs      ???
 
     how to show logically equivalent? 
+
 
     how to show NOT equivalent? 
 
@@ -244,6 +256,10 @@ associative laws
 
 commutative laws 
 
+p ^ q   q ^ P
+
+p -> q  q -> P
+p = t, q = f makes first statement false but the second statement true, so implies is not commutative
 
 
 --> you may still be asked to demonstrate these with
@@ -260,7 +276,7 @@ How do we prove two statements ARE equivalent?
 
 How do we prove two statements are NOT equivalent?
 
-
+one true one false
 
 
 //////////////////////////

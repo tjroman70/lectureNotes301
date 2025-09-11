@@ -45,15 +45,15 @@ How to prove each case?
 
 Satisfiability.
 
---> definition? 
+--> definition? there is at least one truth assignment that evaluates to true
 
 --> how to prove something is satisfiable?
 
-
+Need just 1 truth assignment where it is true
 
 --> how to prove something is not satisfiable?
 
-
+full truth table, all need to be false (contradictury)
 
 ////////////////////////////
 
@@ -71,7 +71,7 @@ running time programs
 can we solve a problem in polynomial time?
 
 can we check a solution to a problem in polynomial time?
-
+not be exponential, would be polynomial time
 
 
 ////////////////////////
@@ -94,7 +94,7 @@ An argument is of the form:
 
 --> When is an argument considered valid?
 
-
+anytime all premises are true, the conclustion is true
 
 
 ///////////////////////////////////////
@@ -117,16 +117,24 @@ I want to prove:
 
 
 Propositional atoms:
-
+q: I am in the ECE dept
+p: I am in the CS dept
+r: I can log in
 
 
 Translations:
 
+Premises:
+p | Q
+!q
+p -> r
+conclution: r & p
 
 
 --> How to prove with a truth table?
 
-
+Find truth assignments where all 3 premises are true,
+make sure conclusion is true for assignments
 
 
 ////////////////////////////////
@@ -171,7 +179,7 @@ We wish to prove:
 
 When is an argument invalid?
 
-
+Find one truth assignment where al the premises were true
 
 
 Example:
@@ -185,7 +193,11 @@ Proposed conclusion:
 
 1) Translate to propositional logic
 
+p: it is sunny
+q: i wear sun sunscreen
 
+premises: p -> q, Q
+conclusion: p
 
 
 
@@ -213,6 +225,7 @@ Does it matter if the conclusion is true when
 
 
 Does it matter if one premise is true when the other isn't?
+No, only care when all premises are true
 
 Does it matter if the conclusion is false when some 
     (but not all) of the premises are true?
@@ -221,7 +234,7 @@ Does it matter if the conclusion is false when some
 
 Downside of proofs with truth tables?
 
-
+Long
 
 
 
