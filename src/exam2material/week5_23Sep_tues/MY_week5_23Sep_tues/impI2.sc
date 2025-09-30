@@ -10,7 +10,7 @@ import org.sireum.justification.natded.prop._
       Proof(
       1 (  p __>: r   ) by Premise,
       2 (  q __>: r   ) by Premise,
-
+      
     )
   )
 }
