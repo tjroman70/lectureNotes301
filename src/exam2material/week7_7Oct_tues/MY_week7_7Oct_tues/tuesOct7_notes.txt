@@ -92,25 +92,27 @@ There exists: usually connect with...⋀
 
 Evaluating predicate logic statements
 
+Domain: ki - kn
+
 1) ∀ x P(x)
-    true when: 
-    false when: 
+    true when: P(k) is true for every k in our domsin
+    false when: we can find one k in our domain whwere P(k) = false
 
 2) ∃ x P(x)
-    true when: 
-    false when: 
+    true when: we can find one k in our domain where P(k) = true
+    false when: P(k) is false for every k in our domain
 
 3) ¬(∀ x P(x))
-    true when: 
-    false when: 
+    true when: one k where P(k) = false
+    false when: P(k) is true for every k
 
 4) ¬(∃ x P(x))
-    true when: 
-    false when: 
+    true when: every k made P(k) false
+    false when: one k = true
 
 5) ∀ x ¬P(x)
-    true when: 
-    false when: 
+    true when: every k makes P false
+    false when: one k = true
 
 6) ∃ x ¬P(x)
     true when: 
