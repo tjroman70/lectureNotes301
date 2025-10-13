@@ -1,6 +1,8 @@
 HW 6 is due tonight
 
-Exam 2 is Thursday, October 15 during class
+Exam 2 is Thursday, October 16 during class
+
+Jacob is having exam review today, 4-5:30 in DUE 1118
 
 No new homework this week
 
@@ -135,6 +137,10 @@ Predicate logic statements, including:
     get out paper
     work through old homework problems
     work through old lecture examples
+
+    do extra propositional logic examples in exam2_propExamples.txt
+
+    go to exam review at 4:00!
 
 ///////////////////////////////////////
 
