@@ -219,16 +219,16 @@ First: consider these two statements:
 
 are they equivalent?
     ∀ x (P(x) ⋀ Q(x))  - translation?
-
+    Everyone is both p and q
 
 
     (∀ x P(x)) ⋀ (∀ x Q(x)) - translation?
-
+    Everyone is P and everyone is Q
 
 
 
 how would we defend our position? 
-
+    two proofs
 
 
 //////////////////////////////////
