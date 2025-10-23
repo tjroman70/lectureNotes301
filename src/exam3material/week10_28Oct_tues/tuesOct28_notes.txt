@@ -1,0 +1,37 @@
+HW 7 due tonight
+
+HW 8 will be posted after class
+
+///////////////////////
+
+Today: 
+- more with induction
+- begin survey of proof techniques
+
+///////////////////////
+
+( P(1) ∧ ∀ k (P(k) → P(k+1)) ) → ∀ n P(n) 
+
+
+
+English translation?
+
+///////////////////////
+
+Example: Prove that the sum of the first n odd numbers is n^2.
+
+    (what is our domain?)
+
+
+How can we express the sum of the first n odd numbers more formally?
+
+
+
+So, what is our claim?
+
+
+
+Proof by induction.
+
+
+/////////////////////////////////
