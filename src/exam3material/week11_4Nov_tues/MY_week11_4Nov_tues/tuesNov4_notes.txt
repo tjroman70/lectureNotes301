@@ -41,7 +41,7 @@ Apply proof techniques and similar reasoning to prove correctness
 of basic programs.
 
 (Why does this matter?)
-
+avionics
 
 
 
@@ -50,7 +50,7 @@ AWS formal methods
 
 
 Drone flight 
-
+kernel on the drone has cyber security on it to try to not get hacked
 
 
 ////////////////////////////
@@ -111,10 +111,10 @@ Then: prove program correctness in "auto" mode
 
 ////////////////////////
 
-Preconditions: ?
+Preconditions: Assumptions we need to make about input or parameters to prove correctness
 
 
-Postconditions: ?
+Postconditions: describe the results of the running program
 
 
 /////
@@ -144,7 +144,8 @@ assert(some claim)
 
 How are Logika asserts different from C# (and other languages)?
 
-
+Logika: checks if we prove something
+other languages: actually runs the code and compares values
 
 
 
@@ -212,8 +213,8 @@ Algebra* (or Algebra T)
 
     Deduce(
         1 ( x == 2 ) by Premise,
-        2 ( x >= 2 ) by ???,
-        3 ( 4 > 0 ) by ???
+        2 ( x >= 2 ) by Algebra*(1)
+        3 ( 4 > 0 ) by Algebra T
     )
 
 

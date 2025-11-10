@@ -27,11 +27,11 @@ Soundness: definition?
 
 
 
-Completeness: definition?
+Completeness: definition? can use proof system to prove
 
-    propositional:
+    propositional: yes
 
-    predicate logic:
+    predicate logic: no
 
 
 
@@ -46,10 +46,10 @@ Same argument might be VALID in one domain and INVALID in another
 Domain with integers with operations like +
 
 
-All integers? 2 + 3 = ?
+All integers? 2 + 3 = 5
 
 
-Subset (0,1,2,3,4) of integers. 2 + 3 = ?
+Subset (0,1,2,3,4) of integers. 2 + 3 = 0
 
 
 
@@ -79,9 +79,9 @@ We want to prove that for any positive integer n:
 
 
 Try it out first.
-    n = 1?
+    n = 1? 1(1+2)/2 = 1
 
-    n = 2?
+    n = 2? 2(2+1)/2 = 3
 
     n = 3?
 
@@ -106,10 +106,14 @@ The induction domino effect:
 
 
 What is this saying?
-    P(1)? 
+    P(1)? base case. prove that my claim holds fro n = 1
 
     ∀ k (P(k) → P(k+1))? 
-
+    for any natural number k, if the claim holds fro k, then it holds for k+1
+    
+    Pick random indiv in domain (k)
+    Assume p(k)
+    try to prove p(k+1)
 
 
 Putting it all together:
@@ -139,6 +143,24 @@ We want to prove that for any positive integer n:
 
 Proof by induction.
 
+    Base case. We must prove that our claim holds fro the first positive integer, n = 1.
+    1 = 1(1+2)/2
+    The base case holds
+
+    Inductive step: Assume  inductive hypothesis -- our claim holds for some fixed positive integer k. Must show claim holds for k+1
+
+    If claim holds then we Have
+    1+2....+k = k(k+1)/2
+
+    to prove our claim
+    k + k+1 = (k+1)((k+1)+1)/2
+
+    We have:
+    1+2...+k + k+1 = k(k+1)/2 + k + 1
+                    = (k(k+1) + 2(k+1))/2
+                    = (k+1)(k+2)/2
+                    = (k+1)((k+1)+1)/2
+    Inductive step holds
 
 
 /////////////////////////////////
@@ -155,13 +177,15 @@ Do you think induction can be used to prove properties for
 
 Induction template.
 
-1) 
+1) Label base case. Prove claim is true fro the samllest element in domain
 
 
-2) 
+2) Label inductive step. "Assume inductive hypothesis - that claim holds for some fixed k in domain
 
 
-3) 
+3) Try to prove for k+1. "We must show our claim holds for k+1
+
+4) Summarize
 
 /////////////////////////////////
 
@@ -188,10 +212,10 @@ Example: Prove that 3^n - 1 is even for all positive integers n.
 
 what does "even" mean? 
 
-
+A number k is even if there exists an intever a such that k = 2a
 
 Proof by induction.
-
+Base case. We must prove that our claim holds fro our smallest positive integer, n = 1
 
 
 //////////////////////////////////

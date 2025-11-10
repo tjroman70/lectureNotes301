@@ -50,15 +50,22 @@ Contrapositive?
 
 
 
-
 Try direct proof first.
 
-
-
+Assume n^2 odd for some integer  n. Then n^2 = 2k+1 where k is an integer
+n^2 = 2k+1
 
 
 Now try contrapositive proof.
 
+If some integer x is even, then x^2 is even
+
+Assume n is even for some integer n.
+Then n = 2k for some integer k. We have:
+n^2 = (2k)^2
+    = 4k^2
+    = 2(2k^2)
+    Thus the shit works out
 
 --> best to indicate in proof that you are using contrapositive
 
@@ -72,19 +79,19 @@ We want to "prove" that 1 = 2.
 "Proof:"
 Let a and b be two equal positive integers. We have that:
 
-    1) a = b                    (reason?)
+    1) a = b                    (reason?) picked to be equal
 
-    2) a^2 = ab                 (reason?)
+    2) a^2 = ab                 (reason?) mult sides by a
 
-    3) a^2 - b^2 = ab - b^2     (reason?)
+    3) a^2 - b^2 = ab - b^2     (reason?) subtract b^2 from both sides
 
-    4) (a-b)(a+b) = b(a-b)      (reason?)
+    4) (a-b)(a+b) = b(a-b)      (reason?) factor
 
-    5) a+b = b                  (reason?)
+    5) a+b = b                  (reason?) divided both sides by (a-b)
 
-    6) 2b = b                   (reason?)               
+    6) 2b = b                   (reason?) a and b pciked to be =            
 
-    7) 2 = 1                    (reason?)
+    7) 2 = 1                    (reason?) divided both sides by b
 
 
 
@@ -139,8 +146,15 @@ Example (use proof by contradiction):
 
 If x^2 is even for an integer x, then x is even.
 
-(which template? )  
+(which template? )  2
 
+Assume n^2 is even for some integer n. then n^2 = 2k for some integer k
+Suppose n is odd
+n = 2m+1 where m is an integer
+    n^2 = (2m+1)^2
+        = 4m^2 + 4m + 1
+        = 2(2m^2 + 2m) + 1
+    Thus all this stuff
 
 
 //////////////////////////

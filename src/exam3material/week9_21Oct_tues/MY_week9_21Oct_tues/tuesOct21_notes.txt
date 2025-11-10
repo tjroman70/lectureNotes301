@@ -98,9 +98,9 @@ x is students
 
     --> what is this argument saying?
 
-∀ x (P(x) → ¬Q(x)): ?
+∀ x (P(x) → ¬Q(x)): All students who attend K-State don't attend KU
 
-¬(∃ x (P(x) ^ Q(x))): ?
+¬(∃ x (P(x) ^ Q(x))): There does not exist a student who attends both K-State and KU
 
 
 ////////////////////////////
@@ -113,10 +113,15 @@ Proof tactics for predicate logic
 
 - see if you can do anything right away with the premises
     Which rules? 
+    AndE1, AndE2
+    AndI if needed
+    ImplyE
+    AllE if I have an All statement and an individual
 
 - look at top-level operator for what you are trying to prove
     trying to prove a "for all" statement with ∀?
 
+    
 
     trying to prove a "there exists" statement with ∃?
 

@@ -4,7 +4,12 @@ HW 7 due tonight
     n^5 - n is divisible by 5
 
 
+An integer x is divisible by 5 if there exists another integer k such that 5k = x
 
+Inductive hypo: For some fixed positive integer k k^5 is divisible by 5
+
+Prove:
+(k+1)^5 - (k + 1) is divisible by 5
 
 
 #6, if n is natural number, then:
@@ -14,21 +19,22 @@ HW 7 due tonight
 
 --> what would inductive hypothesis be?
 
-
+That for some fixed natural number k
+1*1! + 2*2! + ... + k*k! = (k+1)! - 1
 
 --> what would we be trying to prove?
 
+1*1! + 2*2! + ... + k*k!  k+1 * k+1= (k+1) + 1! - 1
 
-
---> how can we express (n+1)!  ?
-    (n+2)!  ?
+--> how can we express (n+1)! = (n+1)*n?
+    (n+2)! = (n+2)(n+1)?
 
 
 
 --> how can we rewrite  k*(k+1)! + (k+2)!   ?
 
-
-
+look for factoring opportunities
+(k+1)! + (k+1)(k+1)! = (k+1)!(1 + k + 1) = (k+2)!
 
 
 HW 8 will be posted after class
@@ -44,7 +50,11 @@ Today:
 
 ( P(1) ∧ ∀ k (P(k) → P(k+1)) ) → ∀ n P(n) 
 
-
+P(1): base (prove our claim for the smallest value in domain)
+Inductive step: (P(k) → P(k+1))
+pick radnom individual
+assume our claim holds for k
+try to show that our claim holds for k+1
 
 English translation?
 
@@ -53,11 +63,12 @@ English translation?
 Example: Prove that the sum of the first n odd numbers is n^2.
 
     (what is our domain?)
+    natural numbers
 
 
 How can we express the sum of the first n odd numbers more formally?
 
-
+1+3+5 + (2n-1) = n^2
 
 So, what is our claim?
 
@@ -65,11 +76,39 @@ So, what is our claim?
 
 Proof by induction.
 
+base case. we must prove that our claim holds for n=1, the first natural number.
+We have 1 on the left side of the claim and 1^2 = 1 on right side of the claim so side are equal
+
+Inductive step: We assume the inductive hypothesis, that 1+3+5 + (2n-1) = n^2 for some natural number k
+
+We must show that:
+1+3+5+ ((2k+1)-1) = k+1^2
+
+Have that:
+1+3+5+ ((2k+1)-1) = k+1^2
+        = k^2 + 2k + 2 - 1
+        = k^2 + 2k + 1
+        = (k+1)^2
+
 
 ////////////////////////////////
 
 Example: prove that for all nonnegative integers n:
     2^0 + 2^1 + ... + 2^n = 2^(n+1) - 1
+
+    Left side: 2^0 = 1
+    Right side: 2^(0+1) -1 = 2 - 1 = 1
+
+    Inductive step: Assume hypo that:
+    2^0 + 2^1 + ... + 2^k = 2^(k+1) - 1
+
+    Must show that:
+    2^0 + 2^1 + ... + 2^k+1 = 2^(k+1)+1 - 1
+
+    Have: 2^0 + 2^1 + ... + 2^k+1 = 2^(k+1)+1 - 1 + 2^(k+1) by inductive hypo
+                        = 2*(2^(k+1)) - 1
+                        = 2^(k+2) - 1
+                        = 2^((k+1)+1) - 1
 
 
 /////////////////////////////////
@@ -234,7 +273,7 @@ Example: prove that the product of two even integers is even.
 If our domain is integers and we have the predicate Even(x), how
 would you write this statement in predicate logic?
 
-
+∀ x ∀ y (Even(x) ^ Even(y) -> Even(xy))
 
 
 
