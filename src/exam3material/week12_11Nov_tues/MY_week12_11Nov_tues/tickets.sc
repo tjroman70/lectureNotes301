@@ -16,12 +16,18 @@ def getTicketCosts(adult: Z, kid: Z): Z = {
 
 
   //what to do here?
-
+  Deduce(
+    1 (adult >= 0) by Premise,
+    2 (kid >= 0) by Premise,
+  )
 
   //get the total ticket cost
   val overall: Z = adult*50 + kid*30
 
   //what to do here?
+  Deduce(
+    
+  )
 
   return overall
 }
