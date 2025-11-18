@@ -53,7 +53,7 @@ Topics:
 - Predicate logic proofs emphasizing the existential quantifier
 - Recursive definitions (functions and sets)
 - Proof techniques, including:
-    - Mathematical induction
+    - Mathematical induction**
     - Direct (conditional) proofs
     - Contrapositive proofs 
     - Proof by contradiction
