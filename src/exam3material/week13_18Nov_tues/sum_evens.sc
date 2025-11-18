@@ -9,8 +9,8 @@ import org.sireum.justification.natded.prop._
 def sumEvens(n: Z): Z = {
   //What can we use as the function contract?
   Contract(
-	Requires( n >= 0 ),
-	Ensures(Res[Z] == n*(n+1))
+	  Requires( n >= 0 ),
+	  Ensures(Res[Z] == n*(n+1))
   )
 
   var sum: Z = 0
@@ -29,16 +29,16 @@ def sumEvens(n: Z): Z = {
 
     cur = cur + 1
 	
-	//need a Deduce block
-	//premises: cur == Old(cur) + 1, sum == Old(cur)*(Old(cur)+1),
-			//Old(cur) != n, n >= 0
-	//need: statement about the invariant without an Old
-		//(won't be able to prove exact invariant yet)
+    //need a Deduce block
+    //premises: cur == Old(cur) + 1, sum == Old(cur)*(Old(cur)+1),
+        //Old(cur) != n, n >= 0
+    //need: statement about the invariant without an Old
+      //(won't be able to prove exact invariant yet)
 	
     sum = sum + 2*cur
 	
-	//premise: sum == Old(sum) + 2*cur, n >= 0
-	//need: sum == cur*(cur+1)
+    //premise: sum == Old(sum) + 2*cur, n >= 0
+    //need: sum == cur*(cur+1)
   }
   
   //premises: sum == cur*(cur+1), !(cur != n), n >= 0
