@@ -12,16 +12,42 @@ def mult(x: Z, y: Z): Z = {
   //what should we require?
   //what should we ensure?
 
+  Contract(
+    Requires(y >= 0),
+    Ensures(Res[Z] x * y)
+  )
+
   var answer: Z = 0
 
   if (y == 0) {
     answer = 0
 
+    Deduce(
+      1 (answer == 0) by Premise,
+      2 (y == 0) by Premise,
+      3 (answer == x * y) by Algebra*(1, 2)
+    )
     //what do we need to do here?
   } else {
 
+    Deduce(
+      1 (!(y == 0)) by Premise,
+      2 (answer == 0) by Premise,
+      3 (y >= 0) by Premise,
+      4 (y - 1 >= 0) by Algebra*(1, 4)
+    )
+
     var temp: Z = mult(x, y-1)
+
+    
+
     answer = x + temp
+
+    Deduce(
+      1 (answer == x + temp) by Premise,
+      2 (temp == x * (y - 1)) by Premise,
+      3 
+    )
 
     //what do we need to show here?
   }
